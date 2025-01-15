@@ -43,9 +43,6 @@ app.mount("/js", StaticFiles(directory=r"JS"), name="js")
 
 # print("Initiating...")
 
-@app.get("/apitest")
-async def rt(request: Request):
-    return {"response":"fk this"}
 
 
 @app.get("/")
